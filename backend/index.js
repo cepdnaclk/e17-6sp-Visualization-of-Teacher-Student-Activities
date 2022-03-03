@@ -20,6 +20,7 @@ const config = require("./config");
 const dbUrl = config.dbUrl;
 
 const postsRouter = require("./routes/posts");
+const homeRouter = require("./routes/home");
 
 // Get log details of the application 
 app.use(logger('dev'));
@@ -43,6 +44,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use("/posts", postsRouter); //(test)
+app.use("/home", homeRouter);
 
 app.listen(port, function() {
     console.log("Runnning on " + port);
