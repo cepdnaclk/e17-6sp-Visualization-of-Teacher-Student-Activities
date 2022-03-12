@@ -4,17 +4,18 @@ import axios from 'axios'
 class LogRecords extends Component {
 
     state = {
-        noOfrecords: null,
+        noOfrecords: 455238,
     }
 
-    componentDidMount() {
-        axios.get("http://localhost:3000/logrecords").then(res => {
-            this.setState({ noOfrecords: res.data })
+    /*componentDidMount() {
+        axios.get("http://localhost:3001/course/users").then(res => {
+            console.log(res.data)
+            this.setState({ noOfrecords: res.data.usercount })
         })
-    }
+    }*/
 
     render() {
-        return <h2> No of Log Records: { this.state.noOfrecords } </h2>
+        return <h2> No of Log Records : { this.state.noOfrecords } </h2>
     }
 }
 

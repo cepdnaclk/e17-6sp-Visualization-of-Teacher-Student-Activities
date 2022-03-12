@@ -8,13 +8,13 @@ class Users extends Component {
     }
 
     componentDidMount() {
-        axios.get("http://localhost:3000/users").then(res => {
-            this.setState({ noOfUsers : res.data})
+        axios.get("http://localhost:3001/course/users").then(res => {
+            this.setState({ noOfUsers : res.data.usercount})
         })
     }
 
     render() {
-        return <h2> No of Users: {this.state.noOfUsers} </h2>
+        return <h2> No of Users : {this.state.noOfUsers} </h2>
     }
 }
 
