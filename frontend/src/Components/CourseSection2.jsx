@@ -7,3 +7,5 @@ export default function CourseSection2() {
         </div>
     );
 }
+
+// comment
