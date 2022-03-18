@@ -74,7 +74,6 @@ The instructions are given to carry out the project in two phases.
 The solution consists of a **web application** that can be used by **teachers/lecturers and students.**
 
 **Phase 1: A simple visualization**
-![Phase 1](./images/dataPhase_1.png)
 
 Features included:
 
@@ -83,7 +82,6 @@ Features included:
 - A representation of students' progresses on assignments/projects submissions.
 
 **Phase 2: Integration of Machine Learning**
-![Phase 2](./images/dataPhase_2.png)
 
 Features included:
 
@@ -110,6 +108,11 @@ Features included:
 ![Database Design ](./images/dbDesign.png)
 ## Data Selection
 ![Data Selection](./images/dataSelection.png)
+**Phase 1**
+![Phase 1](./images/dataPhase_1.png)
+**Phase 2**
+![Phase 1](./images/dataPhase_2.jpg)
+
 ## Visualization in frontend
 ![Frontend Visualization](./images/frontend.png)
 ## Solution Architecture
