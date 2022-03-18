@@ -50,6 +50,7 @@ This tool must be able to give solutions to the problems explained in the proble
 One of the key ideas is to build the tool as a **visually pleasing one (with graphs, charts, e.t.c)** where users can easily grab the information. There is already a filtering option given in Moodle to filter through log data. But this is just a text-based filter to obtain the log records.
 
 Identified requirements can be classified as,
+
 **Functional Requirements**
 
 1. Identifying students behavioral patterns
