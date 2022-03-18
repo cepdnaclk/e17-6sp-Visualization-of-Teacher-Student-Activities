@@ -29,8 +29,8 @@ title:
 
  The project is targeted at the domain of online education. As we all know, the world has shifted to doing many things online since the beginning of the COVID pandemic. This has affected education as well. Therefore, online learning was identified as a good alternative in order to fulfil educational requirements in the new normal. The lack of physical interactions in online education gave rise to many issues.
  
- ![Problem_1](imges/problem_1.png)
-
+ ![Problem_1](images/problem_1.png)
+ ![Problem_2](images/problem_2.png)
 
  As an example, if you look at the above two instances of two students learning through online platforms, even though it can be clearly seen that the students are struggling through their academics, the teacher/lecturer is unaware of it. In the physical scenario, because of the real physical interaction, the teachers can observe the students' behaviours, identify if there are any struggles and lend the necessary help.
  
@@ -76,6 +76,7 @@ The instructions are given to carry out the project in two phases.
 The solution consists of a **web application** that can be used by **teachers/lecturers and students.**
 
 **Phase 1: A simple visualization**
+![Phase 1](images/dataPhase_1.png)
 
 Features included:
 
@@ -84,6 +85,7 @@ Features included:
 - A representation of students' progresses on assignments/projects submissions.
 
 **Phase 2: Integration of Machine Learning**
+![Phase 2](images/dataPhase_2.png)
 
 Features included:
 
@@ -107,12 +109,15 @@ Features included:
 - GPA prediction - Regression
 
 ## Database Design
-
+![Database Design ](images/dbDesign.png)
 ## Data Selection
-
+![Data Selection](images/dataSelection.png)
 ## Visualization in frontend
-
+![Frontend Visualization](images/frontend.png)
 ## Solution Architecture
+![Solution Archietecture](images/archi.png)
+
+
 .....
 
 ## Team
