@@ -12,8 +12,6 @@ title:
 # Teacher Student Activities Based On Moodle Log Data
 ---
 
-This is a sample image, to show how to add images to your page. To learn more options, please refer [this](https://projects.ce.pdn.ac.lk/docs/faq/how-to-add-an-image/)
-
 ![Sample Image](./images/sample.png)
 
 ## Table of Contents
@@ -31,6 +29,9 @@ This is a sample image, to show how to add images to your page. To learn more op
 
  The project is targeted at the domain of online education. As we all know, the world has shifted to doing many things online since the beginning of the COVID pandemic. This has affected education as well. Therefore, online learning was identified as a good alternative in order to fulfil educational requirements in the new normal. The lack of physical interactions in online education gave rise to many issues.
  
+ ![Problem_1](imges/problem_1.png)
+
+
  As an example, if you look at the above two instances of two students learning through online platforms, even though it can be clearly seen that the students are struggling through their academics, the teacher/lecturer is unaware of it. In the physical scenario, because of the real physical interaction, the teachers can observe the students' behaviours, identify if there are any struggles and lend the necessary help.
  
 Therefore, the below issues can be identified in online education due to fewer physical interactions.
