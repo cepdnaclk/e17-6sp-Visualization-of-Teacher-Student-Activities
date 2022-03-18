@@ -1,13 +1,3 @@
----
-layout: home
-permalink: index.html
-
-# Please update this with your repository name and title
-repository-name: eYY-XXX-project-template
-title:
----
-
-[comment]: # "This is the standard layout for the project, but you can clean this and use your own template"
 
 # Teacher Student Activities Based On Moodle Log Data
 ---
@@ -106,15 +96,19 @@ Features included:
 
 ## Database Design
 ![Database Design ](./images/dbDesign.png)
+
 ## Data Selection
 ![Data Selection](./images/dataSelection.png)
+
 **Phase 1**
 ![Phase 1](./images/dataPhase_1.png)
+
 **Phase 2**
 ![Phase 1](./images/dataPhase_2.jpg)
 
 ## Visualization in frontend
 ![Frontend Visualization](./images/frontend.png)
+
 ## Solution Architecture
 ![Solution Archietecture](./images/archi.png)
 
@@ -128,8 +122,8 @@ Features included:
 
 ## Links
 
-- [Project Repository](https://github.com/cepdnaclk/{{ page.repository-name }}){:target="_blank"}
-- [Project Page](https://cepdnaclk.github.io/{{ page.repository-name}}){:target="_blank"}
+- [Project Repository](https://github.com/cepdnaclk/e17-co328-Visualization-of-Teacher-Student-Activities){:target="_blank"}
+- [Project Page](https://github.com/cepdnaclk/e17-co328-Visualization-of-Teacher-Student-Activities/deployments){:target="_blank"}
 - [Department of Computer Engineering](http://www.ce.pdn.ac.lk/)
 - [University of Peradeniya](https://eng.pdn.ac.lk/)
 
