@@ -1,20 +1,6 @@
----
-layout: home
-permalink: index.html
-
-# Please update this with your repository name and title
-repository-name: eYY-XXX-project-template
-title:
----
-
-[comment]: # "This is the standard layout for the project, but you can clean this and use your own template"
 
 # Teacher Student Activities Based On Moodle Log Data
 ---
-
-This is a sample image, to show how to add images to your page. To learn more options, please refer [this](https://projects.ce.pdn.ac.lk/docs/faq/how-to-add-an-image/)
-
-![Sample Image](./images/sample.png)
 
 ## Table of Contents
 1. [Problem Identification](#problem-identification)
@@ -31,6 +17,9 @@ This is a sample image, to show how to add images to your page. To learn more op
 
  The project is targeted at the domain of online education. As we all know, the world has shifted to doing many things online since the beginning of the COVID pandemic. This has affected education as well. Therefore, online learning was identified as a good alternative in order to fulfil educational requirements in the new normal. The lack of physical interactions in online education gave rise to many issues.
  
+ ![Problem_1](./images/problem_1.png)
+ ![Problem_2](./images/problem_2.png)
+
  As an example, if you look at the above two instances of two students learning through online platforms, even though it can be clearly seen that the students are struggling through their academics, the teacher/lecturer is unaware of it. In the physical scenario, because of the real physical interaction, the teachers can observe the students' behaviours, identify if there are any struggles and lend the necessary help.
  
 Therefore, the below issues can be identified in online education due to fewer physical interactions.
@@ -106,23 +95,35 @@ Features included:
 - GPA prediction - Regression
 
 ## Database Design
+![Database Design ](./images/dbDesign.png)
 
 ## Data Selection
+![Data Selection](./images/dataSelection.png)
+
+**Phase 1**
+![Phase 1](./images/dataPhase_1.png)
+
+**Phase 2**
+![Phase 1](./images/dataPhase_2.jpg)
 
 ## Visualization in frontend
+![Frontend Visualization](./images/frontend.png)
 
 ## Solution Architecture
+![Solution Archietecture](./images/archi.png)
+
+
 .....
 
 ## Team
--  eNumber, Name, [email](mailto:name@email.com)
--  eNumber, Name, [email](mailto:name@email.com)
--  eNumber, Name, [email](mailto:name@email.com)
+-  E/17/201, Madushani W.T., [email](mailto:e17201@eng.pdn.ac.lk)
+-  E/17/352, Tillekeratne L.J.I., [email](mailto:e17352@eng.pdn.ac.lk)
+-  E/17/398, Wijerathne I.D.H.S.d., [email](mailto:e17398@eng.pdn.ac.lk)
 
 ## Links
 
-- [Project Repository](https://github.com/cepdnaclk/{{ page.repository-name }}){:target="_blank"}
-- [Project Page](https://cepdnaclk.github.io/{{ page.repository-name}}){:target="_blank"}
+- [Project Repository](https://github.com/cepdnaclk/e17-co328-Visualization-of-Teacher-Student-Activities)
+- [Project Page](https://github.com/cepdnaclk/e17-co328-Visualization-of-Teacher-Student-Activities/deployments)
 - [Department of Computer Engineering](http://www.ce.pdn.ac.lk/)
 - [University of Peradeniya](https://eng.pdn.ac.lk/)
 
