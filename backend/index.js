@@ -23,6 +23,8 @@ const postsRouter = require("./routes/posts");
 const homeRouter = require("./routes/home");
 const courseRouter = require("./routes/course");
 const submissionsRouter = require("./routes/submissions");
+const systemRouter = require("./routes/systemroute")
+const quizRouter = require("./routes/quiz")
 
 // Get log details of the application 
 app.use(logger('dev'));
@@ -49,8 +51,10 @@ app.use("/posts", postsRouter); //(test)
 app.use("/home", homeRouter);
 app.use("/course", courseRouter);
 app.use("/submissions", submissionsRouter);
+app.use("/info", systemRouter);
+app.use("/quiz", quizRouter);
 
-app.listen(port, function () {
+app.listen(port, function() {
     console.log("Runnning on " + port);
 });
 
