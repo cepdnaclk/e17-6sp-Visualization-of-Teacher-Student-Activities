@@ -1,17 +1,18 @@
 import axios from 'axios';
 
-const getSubmissionNames = () => {
-
+async function getSubmissionPlotDetails() {
     let sub_name = "Assignment: Lab 01 -Submission for Lab Exercise - Group AB";
-
-    axios.get(`http://localhost:3001/submissions/summary/plot?subName=${sub_name}`)
-        .then(res => {
-            console.log(res.data)
-        }).catch((e) => {
-            alert(e.res.data.error)
+    try {
+        let res = await axios({
+            url: `http://localhost:3001/submissions/summary/plot?subName=${sub_name}`,
+            method: 'get'
         })
-
-
+        return res.data;
+    }
+    catch (err) {
+        console.error(err);
+    }
 }
 
-export { getSubmissionNames }
+
+export { getSubmissionPlotDetails }

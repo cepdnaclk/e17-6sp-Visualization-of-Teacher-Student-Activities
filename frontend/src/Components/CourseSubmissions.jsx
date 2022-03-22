@@ -1,11 +1,12 @@
 import React from 'react';
-import { getSubmissionNames } from '../APIcalls/Submissions';
+import SubmissionPlot from './SubmissionsPlot';
 
 export default function CourseSubmissions() {
     return (
         <div>
             <h2>Submissions</h2>
-            {getSubmissionNames()}
+            <SubmissionPlot />
+
         </div>
     );
 }
