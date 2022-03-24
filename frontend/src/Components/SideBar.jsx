@@ -14,9 +14,9 @@ export default function SideBar() {
     const drawerWidth = 240;
 
 
-    let links = ['./Overview', './Section2']
+    let links = ['./Overview', './Submissions']
     let icons = [<DevicesIcon />, <GroupsRoundedIcon />]
-    let titles = ['Overview', 'Section 2']
+    let titles = ['Overview', 'Submissions']
 
     function renderIcon(index) {
         return icons[index];
