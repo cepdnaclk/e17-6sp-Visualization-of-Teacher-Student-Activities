@@ -14,5 +14,26 @@ async function getSubmissionPlotDetails() {
     }
 }
 
+async function getUniqueSubmissionNames() {
 
-export { getSubmissionPlotDetails }
+    // let submissionNames = []
+
+    try {
+        let res = await axios({
+            url: "http://localhost:3001/submissions/summary",
+            method: 'get'
+        })
+        // res.data.data.map((obj) => {
+        //     submissionNames.push(obj.Submission_name);
+        // })
+        return res.data
+        // let uniqueSubmissionNames = [...new Set(submissionNames)];
+        // console.log(uniqueSubmissionNames)
+        // return uniqueSubmissionNames;
+    }
+    catch (err) {
+        console.error(err);
+    }
+}
+
+export { getSubmissionPlotDetails, getUniqueSubmissionNames }
