@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +14,10 @@
     "express": "^4.17.3",
     "mongoose": "^6.2.4",
     "morgan": "^1.10.0",
+<<<<<<< HEAD
     "nodeman": "^1.1.2"
+=======
+    "nodemon": "^2.0.15"
+>>>>>>> bf82facd3179ffd552e29df1a4cd57b960cbaf0d
   }
 }

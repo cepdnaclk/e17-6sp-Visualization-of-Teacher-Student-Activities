@@ -122,8 +122,8 @@ Features included:
 
 ## Links
 
-- [Project Repository](https://github.com/cepdnaclk/e17-co328-Visualization-of-Teacher-Student-Activities){:target="_blank"}
-- [Project Page](https://github.com/cepdnaclk/e17-co328-Visualization-of-Teacher-Student-Activities/deployments){:target="_blank"}
+- [Project Repository](https://github.com/cepdnaclk/e17-co328-Visualization-of-Teacher-Student-Activities)
+- [Project Page](https://cepdnaclk.github.io/e17-co328-Visualization-of-Teacher-Student-Activities/)
 - [Department of Computer Engineering](http://www.ce.pdn.ac.lk/)
 - [University of Peradeniya](https://eng.pdn.ac.lk/)
 
