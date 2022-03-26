@@ -15,10 +15,6 @@
     "chart.js": "^3.7.1",
     "react": "^17.0.2",
     "react-bootstrap": "^2.1.2",
-<<<<<<< HEAD
-    "react-chartjs": "^1.2.0",
-=======
->>>>>>> bf82facd3179ffd552e29df1a4cd57b960cbaf0d
     "react-chartjs-2": "^4.0.1",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.1",

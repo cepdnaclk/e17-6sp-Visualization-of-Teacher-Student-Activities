@@ -5,6 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import { useParams } from 'react-router-dom';
 import CourseOverview from '../Components/CourseOverview';
 import CourseSubmissions from '../Components/CourseSubmissions';
+import CourseMaterials from '../Components/CourseMaterials';
 import SideBar from '../Components/SideBar';
 import TopBar from '../Components/TopBar';
 
@@ -20,6 +21,7 @@ export default function CoursePage() {
                 <Toolbar />
                 {pageName === "Overview" ? <CourseOverview /> : null}
                 {pageName === "Submissions" ? <CourseSubmissions /> : null}
+                {pageName === "LearningMaterials" ? <CourseMaterials /> : null}
             </Box>
         </Box>
     );

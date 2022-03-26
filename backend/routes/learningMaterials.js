@@ -44,10 +44,7 @@ router.get("/list", async (req, res) => {
 router.get("/views", async (req, res) => {
     try {
          let views = await Viewed_LM.find();
-         res.status(200).json({
-             status: 200,
-             data: views,
-         });
+         res.status(200).send({ data: views });
      } catch (err) {
           res.status(400).json({
              status: 400,

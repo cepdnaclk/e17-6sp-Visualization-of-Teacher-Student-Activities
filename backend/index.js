@@ -22,14 +22,11 @@ const dbUrl = config.dbUrl;
 //const postsRouter = require("./routes/posts");
 const homeRouter = require("./routes/home");
 const courseRouter = require("./routes/course");
-<<<<<<< HEAD
 const materialsRouter = require("./routes/learningMaterials");
 
-=======
 const submissionsRouter = require("./routes/submissions");
 const systemRouter = require("./routes/systemroute")
 const quizRouter = require("./routes/quiz")
->>>>>>> bf82facd3179ffd552e29df1a4cd57b960cbaf0d
 
 // Get log details of the application 
 app.use(logger('dev'));
@@ -55,13 +52,9 @@ app.use(bodyParser.json());
 app.use("/learningMaterials", materialsRouter); //(test)
 app.use("/home", homeRouter);
 app.use("/course", courseRouter);
-<<<<<<< HEAD
-//app.use("/posts", postsRouter);
-=======
 app.use("/submissions", submissionsRouter);
 app.use("/info", systemRouter);
 app.use("/quiz", quizRouter);
->>>>>>> bf82facd3179ffd552e29df1a4cd57b960cbaf0d
 
 app.listen(port, function() {
     console.log("Runnning on " + port);
