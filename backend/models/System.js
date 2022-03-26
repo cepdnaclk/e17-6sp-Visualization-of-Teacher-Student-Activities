@@ -5,13 +5,13 @@ const mongoose = require("mongoose");
 let Schema = mongoose.Schema;
 
 let systemSchema = new Schema({
-    nooflogrecords: {
+    logRecords: {
         type: String,
     },
-    noofusers: {
+    users: {
         type: String,
     },
-    courseid: {
+    courseID: {
         type: String,
     },
 }, { timestamps: true });
