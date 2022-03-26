@@ -1,15 +1,16 @@
-// routes/posts.js
+// routes/learningMaterials.js
+
 const mongoose = require("mongoose");
 const express = require("express");
-const Post = require("../models/Learning_material");
-const User = require("../models/User");
-const System = require("../models/System");
+const LM = require("../models/LearningMaterial");
+const Viewed_LM = require("../models/Viewed_LM");
+//const System = require("../models/System");
 const router = express.Router();
 
 // Add objects to DB(test)
 router.post("/", async (req, res) => {
     try {
-        let post = new Post(req.body);
+        let post = new LM(req.body);
         post = await post.save();
         res.status(200).json({
             status: 200,
@@ -26,10 +27,10 @@ router.post("/", async (req, res) => {
 // Get list of objects in DB
 router.get("/list", async (req, res) => {
    try {
-        let posts = await Post.find().limit(1).sort({$natural:-1});
+        let materials = await LM.find().limit(10).sort({$natural:-1});
         res.status(200).json({
             status: 200,
-            data: posts,
+            data: materials,
         });
     } catch (err) {
          res.status(400).json({
@@ -39,6 +40,22 @@ router.get("/list", async (req, res) => {
     }
 });
 
+// Get list of objects in DB
+router.get("/views", async (req, res) => {
+    try {
+         let views = await Viewed_LM.find();
+         res.status(200).json({
+             status: 200,
+             data: views,
+         });
+     } catch (err) {
+          res.status(400).json({
+             status: 400,
+             message: err.message,
+         });
+     }
+ });
+/*
 // Get list of objects in DB
 router.get("/user", async (req, res) => {
     //var o = mongoose.model('System',Sys)
@@ -71,6 +88,6 @@ router.get("/sys", async (req, res) => {
              message: err.message,
          });
      }
- });
+ });*/
 
 module.exports = router;
