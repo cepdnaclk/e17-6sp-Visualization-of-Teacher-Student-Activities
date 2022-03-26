@@ -1,32 +1,39 @@
 import React from 'react';
 import { getSubmissionPlotDetails } from '../APIcalls/Submissions';
 import BarChart from './BarChart';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function SubmissionPlot() {
 
-    let plotDataX = ["date1", "date2"]; // dummy values
-    let plotDataY = [1, 2];
+    const [xData, setXdata] = useState([])
+    const [yData, setYdata] = useState([])
 
-    const setAxisData = () => {
+    useEffect(() => {
+        let plotDataX = []; // dummy values
+        let plotDataY = [];
         getSubmissionPlotDetails().then((res) => { // worked
 
             res.data.map((obj) => {
                 plotDataX.push(obj.Date);
                 plotDataY.push(obj.Count);
             })
+            setXdata(plotDataX)
+            setYdata(plotDataY)
 
+        }).catch((e) => {
+            console.log(e)
         })
-    }
+    }, []);
 
     const GeneratePlot = () => {
-        console.log(plotDataX, plotDataY)
-        const [data, setData] = useState({
-            labels: plotDataX, // x axis
+        // console.log(xData, yData)
+        // const [data, setData] = useState({
+        const data = {
+            labels: xData, // x axis
             datasets: [
                 {
-                    label: "Users Gained",
-                    data: plotDataY, // y axis
+                    label: "No of Submissions",
+                    data: yData, // y axis
                     backgroundColor: [
                         "rgba(75,192,192,1)",
                         "#ecf0f1",
@@ -38,7 +45,7 @@ export default function SubmissionPlot() {
                     borderWidth: 2,
                 },
             ],
-        });
+        };
 
         return (
             <div style={{ width: 700 }}>
@@ -47,10 +54,12 @@ export default function SubmissionPlot() {
         );
     }
 
+
+
     return (
         <div>
             <h3>submission plot</h3>
-            {setAxisData()}
+            {/* {setAxisData()} */}
             {GeneratePlot()}
 
         </div>
