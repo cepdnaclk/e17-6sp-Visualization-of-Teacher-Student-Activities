@@ -1,4 +1,4 @@
-Module_ID,Quiz_name,No of students submitted,No of students viewed
+Module_ID,Quiz_name,count,viewed
 44906,"Quiz: Quiz 04 - Data Structures, Modules, Docs and Testing (Attempt 4)",92,1615
 44908,Quiz: Quiz 06 - Object Oriented Programming (Attempt 3),95,1792
 44907,Quiz: Quiz 05 - Numpy and Matplotlib (Attempt 3),124,2678
