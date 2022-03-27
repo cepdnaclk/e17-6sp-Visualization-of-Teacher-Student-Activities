@@ -19,9 +19,11 @@ const port = process.env.PORT || 3001;
 const config = require("./config");
 const dbUrl = config.dbUrl;
 
-const postsRouter = require("./routes/posts");
+//const postsRouter = require("./routes/posts");
 const homeRouter = require("./routes/home");
 const courseRouter = require("./routes/course");
+const materialsRouter = require("./routes/learningMaterials");
+
 const submissionsRouter = require("./routes/submissions");
 const systemRouter = require("./routes/systemroute")
 const quizRouter = require("./routes/quiz")
@@ -47,7 +49,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use("/posts", postsRouter); //(test)
+app.use("/learningMaterials", materialsRouter); //(test)
 app.use("/home", homeRouter);
 app.use("/course", courseRouter);
 app.use("/submissions", submissionsRouter);
