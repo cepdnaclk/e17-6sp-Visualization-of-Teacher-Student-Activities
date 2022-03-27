@@ -4,12 +4,13 @@ import axios from 'axios'
 class Users extends Component {
 
     state = {
-        noOfUsers : null,
+        noOfUsers : 0,
     }
 
     componentDidMount() {
-        axios.get("http://localhost:3001/course/users").then(res => {
-            this.setState({ noOfUsers : res.data.usercount})
+        axios.get("http://localhost:3001/info/system").then(res => {
+            
+            this.setState({ noOfUsers : res.data.data[0].users})
         })
     }
 
