@@ -2,16 +2,20 @@ import React from 'react';
 import { getSubmissionPlotDetails } from '../APIcalls/Submissions';
 import BarChart from './BarChart';
 import { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
+import { Button } from '@mui/material';
 
 export default function SubmissionPlot() {
+    const selectedName = useSelector((state) => state.submission.value);
 
     const [xData, setXdata] = useState([])
     const [yData, setYdata] = useState([])
 
-    useEffect(() => {
+    const showGraph = () => {
+
         let plotDataX = []; // dummy values
         let plotDataY = [];
-        getSubmissionPlotDetails().then((res) => { // worked
+        getSubmissionPlotDetails(selectedName).then((res) => { // worked
 
             res.data.map((obj) => {
                 plotDataX.push(obj.Date);
@@ -23,7 +27,7 @@ export default function SubmissionPlot() {
         }).catch((e) => {
             console.log(e)
         })
-    }, []);
+    }
 
     const GeneratePlot = () => {
         // console.log(xData, yData)
@@ -48,7 +52,7 @@ export default function SubmissionPlot() {
         };
 
         return (
-            <div style={{ width: 700 }}>
+            <div style={{ width: 1000 }}>
                 <BarChart chartData={data} />
             </div>
         );
@@ -58,8 +62,9 @@ export default function SubmissionPlot() {
 
     return (
         <div>
-            <h3>submission plot</h3>
             {/* {setAxisData()} */}
+            <Button variant="contained" onClick={showGraph} sx={{ marginTop: '20px' }} >Generate Plot</Button>
+
             {GeneratePlot()}
 
         </div>
