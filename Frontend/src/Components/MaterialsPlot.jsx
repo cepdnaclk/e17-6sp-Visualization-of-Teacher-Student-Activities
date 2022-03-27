@@ -58,7 +58,7 @@ export default function MaterialPlot() {
 
     return (
         <div>
-            <h3>Viewed learning material plot</h3>
+            <h3>Views on each learning material</h3>
             {/* {setAxisData()} */}
             {GeneratePlot()}
 
