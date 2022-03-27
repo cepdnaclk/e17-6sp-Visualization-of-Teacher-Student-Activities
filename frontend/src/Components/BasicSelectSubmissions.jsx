@@ -5,16 +5,13 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import { getUniqueSubmissionNames } from '../APIcalls/Submissions';
-import { useDispatch } from 'react-redux';
-import { set } from '../features/submission'
 
 export default function BasicSelectSubmissions(props) {
-  const [selectedName, setSelectedName] = React.useState('');
-  const dispatch = useDispatch();
+  const [age, setAge] = React.useState('');
+
 
   const handleChange = (event) => {
-    setSelectedName(event.target.value);
-    dispatch(set(event.target.value));
+    setAge(event.target.value);
   };
 
   const [uniqueSubmissionNames, setUniqueSubmissionNames] = React.useState([])
@@ -39,7 +36,7 @@ export default function BasicSelectSubmissions(props) {
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
-          value={selectedName}
+          value={age}
           label="Age"
           onChange={handleChange}
         >
