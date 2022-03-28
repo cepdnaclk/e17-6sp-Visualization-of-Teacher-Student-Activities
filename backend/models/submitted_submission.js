@@ -3,9 +3,7 @@ let Schema = mongoose.Schema;
 
 let submittedSubmissionsSchema = new Schema(
   {
-    User_id: {
-      type: String,
-    },
+
     Submission_name: {
       type: String,
     },
@@ -13,6 +11,12 @@ let submittedSubmissionsSchema = new Schema(
       type: String,
     },
     Date_time: {
+      type: String,
+    },
+    User_id: {
+      type: String,
+    },
+    Date: {
       type: String,
     },
   },

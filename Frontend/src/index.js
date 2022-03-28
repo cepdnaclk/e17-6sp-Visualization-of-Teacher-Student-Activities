@@ -4,12 +4,13 @@ import App from "./Components/App";
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 import reportWebVitals from './reportWebVitals';
-import submissionReducer from './features/submission'
+import submissionReducer from './features/submission';
+import dateReducer from './features/date.js';
 
 const store = configureStore({
   reducer: {
     submission: submissionReducer,
-
+    date: dateReducer,
   },
 })
 

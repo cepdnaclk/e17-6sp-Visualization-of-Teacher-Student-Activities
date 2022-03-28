@@ -4,6 +4,7 @@ import BarChart from './BarChart';
 import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Button } from '@mui/material';
+import SelectDate from './SelectDate';
 
 export default function SubmissionPlot() {
     const selectedName = useSelector((state) => state.submission.value);
@@ -30,8 +31,7 @@ export default function SubmissionPlot() {
     }
 
     const GeneratePlot = () => {
-        // console.log(xData, yData)
-        // const [data, setData] = useState({
+
         const data = {
             labels: xData, // x axis
             datasets: [
@@ -58,14 +58,14 @@ export default function SubmissionPlot() {
         );
     }
 
-
-
     return (
         <div>
             {/* {setAxisData()} */}
             <Button variant="contained" onClick={showGraph} sx={{ marginTop: '20px' }} >Generate Plot</Button>
 
             {GeneratePlot()}
+            <h2>Check who submitted late!</h2>
+            <SelectDate dates={xData} />
 
         </div>
     );

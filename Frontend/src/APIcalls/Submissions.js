@@ -30,4 +30,19 @@ async function getUniqueSubmissionNames() {
     }
 }
 
-export { getSubmissionPlotDetails, getUniqueSubmissionNames }
+async function getSubmissions(selectedName) {
+
+    try {
+        let res = await axios({
+            url: `http://localhost:3001/submissions/users?subName=${selectedName}`,
+            method: 'get'
+        })
+
+        return res.data
+    }
+    catch (err) {
+        console.error(err);
+    }
+}
+
+export { getSubmissionPlotDetails, getUniqueSubmissionNames, getSubmissions }
