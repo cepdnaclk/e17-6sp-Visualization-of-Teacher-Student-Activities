@@ -13,7 +13,7 @@ const store = configureStore({
     date: dateReducer,
   },
 })
-
+// dummy comment
 ReactDOM.render(
   <Provider store={store}><App /></Provider>
   , document.getElementById('root'));
