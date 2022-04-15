@@ -16,9 +16,9 @@ export default function SideBar() {
 
 
 
-    let links = ['./Overview', './Submissions','./Quizzes','./LearningMaterials']
-    let icons = [<DevicesIcon />, <GroupsRoundedIcon />,<GroupsRoundedIcon/>, <MaterialIcon/>]
-    let titles = ['Overview', 'Submissions','Quizzes','Learning Materials']
+    let links = ['./Overview', './Submissions','./Quizzes','./LearningMaterials','./Clustering']
+    let icons = [<DevicesIcon />, <GroupsRoundedIcon />,<GroupsRoundedIcon/>, <MaterialIcon/>, <GroupsRoundedIcon/>]
+    let titles = ['Overview', 'Submissions','Quizzes','Learning Materials', 'Clustering']
 
   
 

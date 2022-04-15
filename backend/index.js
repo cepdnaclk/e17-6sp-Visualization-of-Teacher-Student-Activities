@@ -23,10 +23,10 @@ const dbUrl = config.dbUrl;
 const homeRouter = require("./routes/home");
 const courseRouter = require("./routes/course");
 const materialsRouter = require("./routes/learningMaterials");
-
 const submissionsRouter = require("./routes/submissions");
 const systemRouter = require("./routes/systemroute")
 const quizRouter = require("./routes/quiz")
+const clusteringRouter = require("./routes/clustering");
 
 // Get log details of the application 
 app.use(logger('dev'));
@@ -55,6 +55,7 @@ app.use("/course", courseRouter);
 app.use("/submissions", submissionsRouter);
 app.use("/info", systemRouter);
 app.use("/quiz", quizRouter);
+app.use("/clustering", clusteringRouter);
 
 app.listen(port, function() {
     console.log("Runnning on " + port);
