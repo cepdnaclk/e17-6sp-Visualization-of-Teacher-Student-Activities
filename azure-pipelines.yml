@@ -20,3 +20,15 @@ steps:
     npm run build
   displayName: 'npm install and build'
   workingDirectory: '$(Build.SourcesDirectory)/backend'
+  
+- task: NodeBuildArtifact@2
+  displayName: 'nodeJs build $(buildConfiguration)'
+  inputs:
+    command: publish
+    publishWebProjects: True
+    arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    zipAfterPublish: True
+    
+- task: PublishBuildArtifacts@1
+  displayName: 'publish artifacts'
+    
