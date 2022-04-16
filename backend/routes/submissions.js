@@ -21,7 +21,7 @@ router.get("/summary", async (req, res) => {
     }
 });
 
-// get plot data for a certain submission
+// get plot data for a certain submission from the database
 router.get("/summary/plot", async (req, res) => {
 
     let subName = req.query.subName;
