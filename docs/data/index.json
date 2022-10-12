@@ -1,0 +1,30 @@
+{
+    "title": "Visualization of teacher-student activities based on Moodle log data",
+    "team": [
+        {
+            "name": "Tillekeratne L.J.I",
+            "email": "e17352@eng.pdn.ac.lk",
+            "eNumber": "E/17/352",
+            "github_profile":"https://github.com/IsaraTillekeratne",
+            "linkedin_profile":"#"
+        },
+        {
+            "name": "Wijerathne I.D.H.S.D",
+            "email": "e17398@eng.pdn.ac.lk",
+            "eNumber": "E/17/398",
+            "github_profile":"https://github.com/hashiniWijerathne",
+            "linkedin_profile":"#"
+        },
+            "name": "Madushani W.T",
+            "email": "e17201@eng.pdn.ac.lk",
+            "eNumber": "E/17/201",
+            "github_profile":"https://github.com/Thilini98",
+            "linkedin_profile":"#"
+    ],
+    "supervisors": [
+        {
+            "name": "Dr. Sampath Deegalle"
+        }
+    ],
+    "tags": ["Web", "Machine Learning"]
+}
