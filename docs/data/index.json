@@ -15,15 +15,18 @@
             "github_profile":"https://github.com/hashiniWijerathne",
             "linkedin_profile":"#"
         },
+        {
             "name": "Madushani W.T",
             "email": "e17201@eng.pdn.ac.lk",
             "eNumber": "E/17/201",
             "github_profile":"https://github.com/Thilini98",
             "linkedin_profile":"#"
+        }
     ],
     "supervisors": [
         {
-            "name": "Dr. Sampath Deegalle"
+            "name": "Dr. Sampath Deegalle",
+            "email": "sampath@eng.pdn.ac.lk",
         }
     ],
     "tags": ["Web", "Machine Learning"]
